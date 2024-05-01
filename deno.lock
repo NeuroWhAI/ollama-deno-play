@@ -1,0 +1,26 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "npm:ollama@0.5.0": "npm:ollama@0.5.0"
+    },
+    "npm": {
+      "ollama@0.5.0": {
+        "integrity": "sha512-CRtRzsho210EGdK52GrUMohA2pU+7NbgEaBG3DcYeRmvQthDO7E2LHOkLlUUeaYUlNmEd8icbjC02ug9meSYnw==",
+        "dependencies": {
+          "whatwg-fetch": "whatwg-fetch@3.6.20"
+        }
+      },
+      "whatwg-fetch@3.6.20": {
+        "integrity": "sha512-EqhiFU6daOA8kpjOWTL0olhVOF3i7OrFzSYiGsEMB8GcXS+RrzauAERX65xMeNWVqxA6HXH2m69Z9LaKKdisfg==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {},
+  "workspace": {
+    "dependencies": [
+      "npm:ollama@0.5.0"
+    ]
+  }
+}
