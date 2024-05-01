@@ -20,7 +20,11 @@ while (true) {
   }
 
   const message: Message = { role: 'user', content: userPrompt };
-  const response = await ollama.chat({ model: targetModel, messages: [message], stream: true })
+  const response = await ollama.chat({
+    model: targetModel,
+    messages: [message],
+    stream: true,
+  });
   for await (const part of response) {
     Deno.stdout.write(textEncoder.encode(part.message.content));
   }
